@@ -811,9 +811,9 @@ button {
 }
 
 @media screen and (min-width: 768px) {
-  .footer {
+  /*.footer {
     padding-left: 108px;
-  }
+  }*/
 }
 
 @media screen and (min-width: 1158px) {
@@ -829,12 +829,18 @@ button {
   gap: 72px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px), {
   .footer-container {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 72px 24px;
     text-align: left;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1157px), {
+  .footer-container {
+    width: 584px;
   }
 }
 
@@ -844,7 +850,7 @@ button {
   }
 
   .footer-logo-container {
-    margin-right: 120px;
+    margin-right: 96px;
   }
 }
 
@@ -890,7 +896,7 @@ button {
 
 @media screen and (min-width: 1158px) {
   .social-media-container {
-    /*margin-right: 80px;*/
+    margin-right: 56px;
   }
 }
 
@@ -1037,6 +1043,7 @@ button {
 .modal {
   position: absolute;
   width: 288px;
+  min-height: 623px;
   border-radius: 4px;
   background-color: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
@@ -1048,16 +1055,10 @@ button {
   padding: 72px 16px 24px 16px;
 }
 
-@media screen and (max-width: 767px) {
-  .modal {
-    height: 100%;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .modal {
     width: 408px;
-    min-height: 623px;
+    min-height: 584px;
     padding: 72px 24px 24px 24px;
   }
 }
